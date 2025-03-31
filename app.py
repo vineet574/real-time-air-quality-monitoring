@@ -1,4 +1,5 @@
 import streamlit as st
+import matplotlib.pyplot as plt
 from fetch_data import fetch_air_quality_data
 
 def display_air_quality(data):
@@ -24,6 +25,21 @@ def display_air_quality(data):
     # Additional information
     st.write("Dominant Pollutant:", data['data']['dominentpol'])
     st.write("Location:", data['data']['city']['name'])
+
+    # **New Feature: Historical AQI Trend**
+    if 'history' in data['data']:
+        history = data['data']['history']
+        dates = [entry['date'] for entry in history]
+        aqi_values = [entry['aqi'] for entry in history]
+
+        # Plot AQI trend
+        fig, ax = plt.subplots()
+        ax.plot(dates, aqi_values, marker='o', linestyle='-')
+        ax.set_xlabel("Date")
+        ax.set_ylabel("AQI")
+        ax.set_title("AQI Trend Over Last 7 Days")
+        ax.grid(True)
+        st.pyplot(fig)
 
 def main():
     st.sidebar.header("Real-Time Air Quality Monitoring")
