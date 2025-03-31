@@ -35,3 +35,11 @@ Displays location details.
 ✅ Enhanced Error Handling 🚨
 
 Shows an error if AQI data fetching fails.
+
+
+
+
+How It Works?
+1️⃣ User enters latitude & longitude.
+2️⃣ App fetches real-time AQI for the entered location.
+3️⃣ AQI Trend Chart appears, showing pollution patterns over time.
