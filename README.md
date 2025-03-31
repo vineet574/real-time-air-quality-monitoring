@@ -16,3 +16,22 @@ API
 This project uses the World Air Quality Index (WAQI) API. You need to register for a free API token at https://aqicn.org/api/.
 New Feature Added:
 📊 AQI Trend Chart – Displays the AQI trend over the last 7 days for better insights into air quality variations.
+
+
+ AQI Trend Chart 📈
+
+Fetches historical AQI data (last 7 days).
+
+Uses Matplotlib to plot AQI trends.
+
+Helps users understand air pollution patterns.
+
+✅ Better UI & Information 🎨
+
+Clearly shows dominant pollutants.
+
+Displays location details.
+
+✅ Enhanced Error Handling 🚨
+
+Shows an error if AQI data fetching fails.
