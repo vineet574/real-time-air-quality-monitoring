@@ -36,7 +36,7 @@ def display_air_quality(data, days):
         ax.grid(True)
         st.pyplot(fig)
 
-        # Option to download AQI data
+        
         st.download_button(
             label="Download AQI Data as CSV",
             data=pd.DataFrame(history).to_csv(index=False),
