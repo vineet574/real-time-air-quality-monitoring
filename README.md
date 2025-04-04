@@ -43,3 +43,12 @@ How It Works?
 1️⃣ User enters latitude & longitude.
 2️⃣ App fetches real-time AQI for the entered location.
 3️⃣ AQI Trend Chart appears, showing pollution patterns over time.
+
+
+
+Key Additions:
+Days Slider: Enables users to choose the number of days for historical data.
+
+Download Button: Allows users to download the AQI history as a CSV file.
+
+Dynamic Historical Trend: Users can customize the duration of AQI trend visualization.
